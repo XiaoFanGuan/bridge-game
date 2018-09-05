@@ -1,0 +1,84 @@
+.header > div {
+    border-radius:10%;
+    overflow: hidden;
+}
+.imps{
+    width:100%;
+    height:100%;
+    background-color: #eeeeee;
+}
+.imps > .iheader {
+    text-align: center;
+    height:25%;
+    background-color: #eeeeee;
+}
+.imps > .ibody {
+    height:75%;
+    background-color: #0099cc;
+}
+
+
+
+.seats{
+    width:100%;
+    height:100%;
+    background-color: #0099cc;
+}
+.seats > div {float:left;text-align: center}
+.seats > .s1{
+    width:100%;
+    height:20%;
+    background-color: #eeeeee;
+}
+.seats > .s2{
+    margin-top:2%;
+    width:20%;
+    height:57%;
+    background-color: #eeeeee;
+}
+.seats > .s{
+    margin-top:2%;
+    width:60%;
+    height:57%;
+    background-color: #0099cc
+}
+.seats > .s3{
+    margin-top:2%;
+    /* margin-left:60%; */
+    width:20%;
+    height:57%;
+    background-color: #eeeeee;
+}
+.seats > .s4{
+    margin-top:2%;
+    width:100%;
+    height:20%;
+    background-color: #eeeeee;
+}
+
+ 
+.tricks{
+    width:100%;
+    height:100%;
+    background-color: #0099cc;
+}
+.tricks > div {float:left;text-align: center}
+.tricks > .s1{
+    width:30%;
+    height:68%;
+    background-color: #eeeeee;
+}
+.tricks > .s2{
+    margin-top:5%;
+    margin-left:5%;
+    width:60%;
+    height:60%;
+    background-color: #eeeeee;
+    border-radius:10%;
+}
+.tricks > .s3{
+    margin-top:2%;
+    width:100%;
+    height:30%;
+    background-color: #eeeeee;
+}

@@ -1,0 +1,15 @@
+.table1 table,.courseTable table{
+    border-collapse:collapse;
+    width:100%;
+}
+.courseTable table,.courseTable th, .courseTable td{
+    border: 1px solid gray;
+    text-align:center;
+    padding:8px;
+}
+/* .one_course{
+    background-color: darkcyan;
+} */
+.one_course td{
+    padding:0px 10px;
+}

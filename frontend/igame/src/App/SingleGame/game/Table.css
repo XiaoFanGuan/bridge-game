@@ -1,0 +1,168 @@
+.match_table{
+    overflow: hidden;
+    position: relative;
+    background-color: #000000;
+}
+.mask{
+    position: absolute;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 11;
+    border: 3px solid #ee88ee;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    word-wrap: normal;
+    word-break: normal;
+    /* display:none; */
+}
+.panel{
+    position: absolute;
+    z-index:2;
+    /* filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;     */
+}
+.header{
+    position: relative;
+}
+.claimbtn{
+    position: absolute;
+    bottom: 0%;
+}
+.re{
+    background-color: #ee88ee;
+    float: left;
+    margin:2px;
+}
+
+.body{
+    position: relative;
+    background-image: url(/imgs/bg1.png);
+    background-size: 100% 100%;
+    border-radius:3%;
+}
+.lastTrick{
+    position: absolute;
+    width: 30%;
+    height:30%;
+    background-color:#eeee99;
+    z-index: 8;
+    border-radius:5%;
+
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #552211;
+    /* vertical-align:top;
+    display: table-cell; */
+}
+.footer > input[type=text]{
+    position: absolute;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    width:80%;
+    height:100%;
+}
+.footer > input[type=button]{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:19%;
+    height:100%;
+}
+.east {
+    position: absolute;
+    right: 0;
+    /*background-color: #880000;*/
+}
+.pan_south {
+    position: absolute;
+    bottom: 0;
+    /*background-color: #008800;*/
+}
+.west {
+    position: absolute;
+    /*background-color: #880000;*/
+}
+.pan_north {
+    position: absolute;
+    top: 0;
+    /*background-color: #008800*/
+}
+.re{
+    background-color: #ee88ee;
+    float: left;
+    margin:2px;
+}
+.board {
+    position: absolute;
+    border: 1px solid #6666aa;
+    opacity: 0.8;
+}
+
+/*
+.userTag    用户名称显示的黄色长条
+.seat       在里面显示为换色，这两个div 可以省略一个。
+*/
+.board > .userTag{
+    position: absolute;
+    background-color: #eeeeee;
+}
+.board .seat {
+    text-align:center;   
+    background-color: #ffff55;
+}
+.board > .userTag:nth-child(1) > .seat{
+         height:100%;
+}
+.board > .userTag:nth-child(2) > .seat{
+    height:100%;      
+}
+.board > .userTag:nth-child(3) > .seat{
+         height:100%; 
+}
+.board > .userTag:nth-child(4) > .seat{
+    height:100%;      
+}
+.board > .userTag:nth-child(1){
+    right:-36%;    height:8%;    width:80%;    top:46%;   transform: rotate(90deg)
+}
+.board > .userTag:nth-child(2){
+    bottom:0px;    height:8%;    width:100%;    left:0%;
+}
+.board > .userTag:nth-child(3){
+    left:-36%;    height:8%;    width:80%;    top:46%;    transform: rotate(90deg)
+}
+.board > .userTag:nth-child(4){
+    height:8%;    width:100%;    left:0%;
+}
+.result {
+    position: absolute;
+    background-color:rgba(0, 0, 66, 0.2);
+    opacity:0.8;
+    border:1px solid #eeee99
+}
+.result > div,img {
+    float:left;
+    height:60%;
+}
+.result > img {
+    width:25%;
+}
+.result > div {
+    width:75%;
+    font-size:smaller;
+}
+.result > button {
+    margin:0
+}
+
+.message{
+    padding:2%;
+    color:#FFFFFF;
+    overflow-y: scroll;
+}

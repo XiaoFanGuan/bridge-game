@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem name="Table"
+            id="menu_table"
+            parent="menu_main_igame"
+            sequence="2" />
+
+        <record model="ir.actions.act_window" id="action_table_list">
+            <field name="name">Table</field>
+            <field name="res_model">og.table</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create a Table
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menu_game_table_list"
+            name="Tables"
+            parent="menu_table"
+            action="action_table_list"
+            sequence="30"/>
+
+        <record id="view_table_tree" model="ir.ui.view">
+            <field name="name">table</field>
+            <field name="model">og.table</field>
+            <field name="arch" type="xml">
+                <tree string="Table">
+                    <field name="name"/>
+                    <field name="number"/>
+                    <field name="ns_partner_id"/>
+                    <field name="ew_partner_id"/>
+                    <field name="partner_ids"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="view_table_partner_tree" model="ir.ui.view">
+            <field name="name">table.partner</field>
+            <field name="model">og.table.partner</field>
+            <field name="arch" type="xml">
+                <tree string="TablePartner">
+                    <field name="position"/>
+                    <field name="partner_id"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+</odoo>

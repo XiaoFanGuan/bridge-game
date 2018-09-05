@@ -1,0 +1,27 @@
+.prepare{
+    margin:8%;
+    position: absolute;
+    width: 84%;
+    height:84%;
+    /*background-color: aqua;*/
+}
+.prepare > button { position: absolute;width:30%;height:12%}
+.prepare > .ready {
+    opacity: 0.5;
+}
+.prepare > .pe {
+    margin-top:44%; /* 50 - 12/2 */
+    right:0px;
+}
+.prepare > .ps {
+    margin-left:35%; /* 50 - 30/2 */
+    bottom:0px;
+}
+.prepare > .pw {
+    margin-top:44%;
+    left:0px;
+}
+.prepare > .pn {
+    margin-left:35%;
+    top:0px;
+}

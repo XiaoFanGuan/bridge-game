@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+        <menuitem name="Deal"
+            id="menu_deal"
+            parent="menu_main_igame"
+            sequence="2" />
+
+        <record model="ir.actions.act_window" id="action_deal_list">
+            <field name="name">Deal</field>
+            <field name="res_model">og.deal</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create a deal
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menu_game_deal_list"
+            name="Deals"
+            parent="menu_deal"
+            action="action_deal_list"
+            sequence="30"/>
+
+        <record id="view_deal_tree" model="ir.ui.view">
+            <field name="name">deal</field>
+            <field name="model">og.deal</field>
+            <field name="arch" type="xml">
+                <tree string="Deal">
+                    <field name="number"/>
+                    <field name="dealer"/>
+                    <field name="vulnerable"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_deal_card_tree" model="ir.ui.view">
+            <field name="name">deal.card</field>
+            <field name="model">og.deal.card</field>
+            <field name="arch" type="xml">
+                <tree string="Deal">
+                    <field name="pos"/>
+                    <field name="name"/>
+                    <field name="suit"/>
+                    <field name="rank"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+</odoo>

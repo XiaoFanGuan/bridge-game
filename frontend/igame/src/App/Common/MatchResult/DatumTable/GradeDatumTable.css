@@ -1,0 +1,59 @@
+.tablsTitle tbody{
+    text-align: center;
+}
+.tablsTitle tbody {
+    border:  1px solid rgba(232, 232, 232) !important; 
+}
+.tablsTitle .firsttd{
+    border-bottom: 1px solid  rgba(232, 232, 232) !important;
+}
+.tablsTitle .lefttd{
+    border-right: 1px solid  rgba(232, 232, 232) !important;
+}
+.datumTable th{
+  padding: 0px !important;
+  text-align: center  !important;
+}
+.datumborder .ant-table{
+    border-bottom: none !important;
+}
+.datumTable td{
+    text-align: center;
+}
+.gradeborder .ant-table {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+.gradeTable td:first-child{
+    border-top: none;
+    border-bottom: none;
+}
+.gradeborder tr:first-child td{
+    border-top:1px solid rgb(239, 239,239);
+}
+.gradeborder tr:first-child td:first-child{
+    border-top:none;
+}
+.gradeborder tr:last-child td{
+    border-bottom:1px solid rgb(239, 239,239) !important;
+}
+.gradeborder tr:last-child td:first-child{
+    border-bottom:none !important;
+}
+
+.gradeTable .ant-spin-container{
+    /* position: absolute; */
+    width: 100%;
+    margin-top: 10px;
+}
+.gradeTable {
+    clear: bottom;
+    /* height: 100% !important; */
+}
+.hostGuestTable .ant-table{
+    border-top: none !important;
+ }
+ .hostGuestTable .ant-spin-container{
+     margin-top: 0px;
+ }
+

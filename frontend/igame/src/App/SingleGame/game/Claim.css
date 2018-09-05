@@ -1,0 +1,57 @@
+/*
+
+*/
+.claim{
+    position: absolute;
+    margin:10%;
+    padding:5%;
+    width:70%;
+    height:40%;
+    background-color:#0099cc;
+    z-index:1000;
+    text-align: center;
+}
+ #myclaim.claim button.waitingClaim{
+    position: absolute;
+    bottom: 5%;
+    left:35%;
+    width:35%;
+    height:20%; 
+} 
+#myclaim.claim button.cancelClaim{
+    position: absolute;
+    bottom: 5%;
+    left:15%;
+    width:30%;
+    height:20%;
+}
+#myclaim.claim button.sureClaim{
+    position: absolute;
+    bottom: 5%;
+    right:15%;
+    width:30%;
+    height:20%;
+}
+#otherclaim.claim button{
+    position: absolute;
+    bottom: 5%;
+    width:30%;
+    height:15%;
+}
+#otherclaim.claim button:nth-child(2){ left:18%}
+#otherclaim.claim button:nth-child(3){ left:52%}
+
+.cblock{
+    position: relative;
+    float: left;
+    width: 19%;
+    height:15%;
+    margin-left: 0.8%;
+    margin-top: 0.8%;
+    box-shadow: 2px 2px 1px #888888;
+
+}
+.cblock > div{
+    width: 100%;
+    height:100%;
+}

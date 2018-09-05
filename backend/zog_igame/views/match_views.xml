@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem name="Match"
+            id="menu_match"
+            parent="menu_main_igame"
+            sequence="2" />
+
+        <record model="ir.actions.act_window" id="action_match_list">
+            <field name="name">Match</field>
+            <field name="res_model">og.match</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create a Match
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menu_game_match_list"
+            name="Matchs"
+            parent="menu_match"
+            action="action_match_list"
+            sequence="30"/>
+
+        <record id="view_match_tree" model="ir.ui.view">
+            <field name="name">match</field>
+            <field name="model">og.match</field>
+            <field name="arch" type="xml">
+                <tree string="Match">
+                    <field name="name"/>
+                    <field name="host_partner_id"/>
+                    <field name="guest_partner_id"/>
+                    <field name="open_table_id"/>
+                    <field name="close_table_id"/>
+                    <field name="deal_count"/>
+                    <field name="host_imp"/>
+                    <field name="guest_imp"/>
+                    <field name="host_vp"/>
+                    <field name="guest_vp"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="view_match_line_tree" model="ir.ui.view">
+            <field name="name">match.line</field>
+            <field name="model">og.match.line</field>
+            <field name="arch" type="xml">
+                <tree string="MatchLine">
+                    <field name="deal_id"/>
+                    <field name="open_result2"/>
+                    <field name="open_ns_point"/>
+                    <field name="open_ew_point"/>
+                    <field name="close_result2"/>
+                    <field name="close_ns_point"/>
+                    <field name="close_ew_point"/>
+                    <field name="host_point"/>
+                    <field name="guest_point"/>
+                    <field name="host_imp"/>
+                    <field name="guest_imp"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+</odoo>

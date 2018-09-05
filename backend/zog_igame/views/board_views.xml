@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record model="ir.actions.act_window" id="action_board_list">
+            <field name="name">Board</field>
+            <field name="res_model">og.board</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create a board
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menu_game_board_list"
+            name="Boards"
+            parent="menu_deal"
+            action="action_board_list"
+            sequence="30"/>
+
+        <record id="view_board_tree" model="ir.ui.view">
+            <field name="name">board</field>
+            <field name="model">og.board</field>
+            <field name="arch" type="xml">
+                <tree string="Board">
+                    <field name="table_id"/>
+                    <field name="number"/>
+                    <field name="dealer"/>
+                    <field name="vulnerable"/>
+                    <field name="declarer"/>
+                    <field name="contract"/>
+                    <field name="openlead"/>
+                    <field name="result"/>
+                    <field name="ns_point"/>
+                    <field name="ew_point"/>
+
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_board_call_tree" model="ir.ui.view">
+            <field name="name">board call</field>
+            <field name="model">og.board.call</field>
+            <field name="arch" type="xml">
+                <tree string="Board">
+                    <field name="number"/>
+                    <field name="pos"/>
+                    <field name="name"/>
+                    <field name="rank"/>
+                    <field name="trump"/>
+                    <field name="risk"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_board_card_tree" model="ir.ui.view">
+            <field name="name">board card</field>
+            <field name="model">og.board.card</field>
+            <field name="arch" type="xml">
+                <tree string="Board">
+                    <field name="trickno"/>
+                    <field name="cardno"/>
+                    <field name="pos"/>
+                    <field name="name"/>
+                    <field name="number"/>
+                </tree>
+            </field>
+        </record>
+
+
+</odoo>

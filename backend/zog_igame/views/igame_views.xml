@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record model="ir.actions.act_window" id="action_igame_list">
+            <field name="name">Ientelligent Game</field>
+            <field name="res_model">og.igame</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create a game
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="iGame"
+            id="menu_igame"
+            parent="menu_main_igame"
+            sequence="2" />
+
+        <menuitem id="menu_igame_list"
+            name="iGames"
+            parent="menu_igame"
+            action="action_igame_list"
+            sequence="25"/>
+
+        <record id="view_og_igame_tree" model="ir.ui.view">
+            <field name="name">igame.tree</field>
+            <field name="model">og.igame</field>
+            <field name="arch" type="xml">
+                <tree string="Intelligent Game">
+                    <field name="sequence"/>
+                    <field name="parent_id"/>
+                    <field name="name"/>
+                    <field name="game_type"/>
+                    <field name="match_type"/>
+                    <field name="org_type"/>
+                    <field name="score_uom"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_og_igame_team_tree" model="ir.ui.view">
+            <field name="name">igame.team.tree</field>
+            <field name="model">og.igame.team</field>
+            <field name="arch" type="xml">
+                <tree string="Intelligent Game Team">
+                    <field name="igame_id"/>
+                    <field name="partner_id"/>
+                    <field name="group_id"/>
+                    <field name="number"/>
+                    <!--<field name="position"/>-->
+                    <field name="score"/>
+                    <field name="score_uom"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_og_igame_team_player_tree" model="ir.ui.view">
+            <field name="name">igame.team.player.tree</field>
+            <field name="model">og.igame.team.player</field>
+            <field name="arch" type="xml">
+                <tree string="Intelligent Game Team Player">
+                    <field name="partner_id"/>
+                    <field name="role"/>
+                    <field name="team_id"/>
+
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_og_igame_team_line_tree" model="ir.ui.view">
+            <field name="name">igame.team.line.tree</field>
+            <field name="model">og.igame.team.line</field>
+            <field name="arch" type="xml">
+                <tree string="Intelligent Game Team Line">
+                    <field name="igame_id"/>
+
+                    <field name="team_id"/>
+                    <field name="round_id"/>
+
+                    <field name="score"/>
+                    <field name="score_uom"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_igame_score_list">
+            <field name="name">Ientelligent Game Team</field>
+            <field name="res_model">og.igame.team</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Join a game
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_game_score_list"
+            name="iGames Team"
+            parent="menu_igame"
+            action="action_igame_score_list"
+            sequence="30"/>
+
+</odoo>

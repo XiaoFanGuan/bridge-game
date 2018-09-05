@@ -1,0 +1,7 @@
+/* .oneTable td{
+    padding: 0px !important;
+    text-align: center;
+}*/
+.oneTable tr td:last-child{
+   border-right: 1px solid rgb(240, 240, 240) !important;
+} 

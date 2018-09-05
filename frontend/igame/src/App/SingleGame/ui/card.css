@@ -1,0 +1,8 @@
+.card{
+    width:91px;
+    height:130px;
+    background-image: url(/imgs/card-back.png);
+    position:'';
+    background-repeat: no-repeat
+    
+}

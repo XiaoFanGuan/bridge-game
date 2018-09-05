@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem name="Channel"
+            id="menu_channel"
+            parent="zog_igame.menu_main_igame"
+            sequence="2" />
+
+        <record model="ir.actions.act_window" id="action_channel_list">
+            <field name="name">Channel</field>
+            <field name="res_model">og.channel</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create a Table
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem id="menu_game_channel_list"
+            name="channels"
+            parent="menu_channel"
+            action="action_channel_list"
+            sequence="30"/>
+
+        <record id="view_channel_tree" model="ir.ui.view">
+            <field name="name">channel</field>
+            <field name="model">og.channel</field>
+            <field name="arch" type="xml">
+                <tree string="Channel">
+                    <field name="name"/>
+                    <field name="mail_channel_id"/>
+                    <field name="igame_id"/>
+                    <field name="table_id"/>
+                </tree>
+            </field>
+        </record>
+
+</odoo>

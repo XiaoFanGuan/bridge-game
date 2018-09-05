@@ -1,0 +1,46 @@
+.calendartable{
+    width: 100%;
+    height: 20em;
+}
+.calendartable th{
+    text-align: center;
+    background: #ccc;
+}
+.calendartable td{
+    margin:  15px;
+    font-size: 20px;
+    text-align: center;
+}
+.calendartable td div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.signButton{
+    /* margin:  5px 0; */
+    width: 100%;
+    background: #fff;
+    border: 2px solid #999;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 15px;
+}
+.signButton button{
+    background: #fff;
+    width: 100%;
+}
+.yearmonth{
+    width: 100%;
+    height:40px;
+    color:#6ac4f2;
+}
+.yearmonth p{
+    letter-spacing: 5px;
+    font-size: 17px;
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
